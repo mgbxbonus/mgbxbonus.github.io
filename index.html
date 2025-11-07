@@ -1,182 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGBX Echo Points - Hidden Gem of 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #232F3E;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .highlight {
-            color: #d9534f;
-            font-weight: bold;
-        }
-        .section-title {
-            font-size: 1.5em;
-            color: #5e5e5e;
-            margin-top: 30px;
-            border-bottom: 2px solid #f1f1f1;
-            padding-bottom: 10px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #1d74f5;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .cta-button:hover {
-            background-color: #0f62db;
-        }
-        .info-box {
-            background-color: #f2f2f2;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .table-container {
-            margin-top: 30px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f7f7f7;
-            font-weight: bold;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .warning {
-            color: #d9534f;
-            font-weight: bold;
-        }
-        .success {
-            color: #5bc0de;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💎 MGBX Echo Points — Hidden Gem of 2025</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #1b0034, #42006c, #6f00a8);
+      text-align: center;
+      padding: 120px 20px;
+      color: #fff;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      color: #ddd;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #ff0099, #ff5f6d);
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 15px 35px;
+      border-radius: 50px;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff4aa5;
+    }
+
+    /* SECTION STYLES */
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    .section-light {
+      background: #141416;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      margin-top: 40px;
+      padding: 60px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff0099;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+
+    p.highlight {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1c1c21;
+      border: 1px solid #2a2a31;
+      border-radius: 12px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #ff0099;
+      box-shadow: 0 0 15px rgba(255, 0, 153, 0.3);
+    }
+
+    .card h3 {
+      color: #ff4aa5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+    }
+
+    th, td {
+      border: 1px solid #2a2a31;
+      padding: 14px;
+      text-align: left;
+    }
+
+    th {
+      background: #2a2a31;
+      color: #ff0099;
+    }
+
+    tr:nth-child(even) {
+      background: #19191d;
+    }
+
+    .quote {
+      background: #1a1a20;
+      border-left: 5px solid #ff0099;
+      padding: 20px;
+      margin-top: 25px;
+      font-style: italic;
+    }
+
+    /* CTA SECTION */
+    .cta {
+      background: linear-gradient(90deg, #ff0099, #ff5f6d);
+      text-align: center;
+      color: #fff;
+      padding: 80px 20px;
+      border-radius: 20px;
+      margin-top: 80px;
+      box-shadow: 0 0 25px rgba(255, 0, 153, 0.4);
+    }
+
+    .cta h2 {
+      color: #fff;
+    }
+
+    .cta a {
+      background: #fff;
+      color: #ff0099;
+      font-weight: bold;
+      padding: 15px 40px;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      transform: scale(1.1);
+      background: #f5f5f5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>💎 MGBX Echo Points - Hidden Gem Everyone Missed</h1>
-</header>
+  <div class="hero">
+    <h1>💎 MGBX ECHO POINTS</h1>
+    <p>The Hidden Gem Everyone Missed — While Others Chase Hype, Smart Earn Quietly</p>
+    <a href="https://www.mgbx.com/register/TszNGCic" target="_blank" class="btn-primary">Join Now & Earn</a>
+  </div>
 
-<div class="container">
-    <p><strong>4 days ago</strong></p>
-    <p><strong>Viewed 127 times</strong></p>
-    <p><strong>Global Feed</strong></p>
+  <section>
+    <h2>What Is Echo Points?</h2>
+    <p class="highlight">The internal reward system of <b>MGBX</b>, launched October 3 2025 — built for <span style="color:#ff4aa5;">real users</span>, not bots. Every action counts: register, trade, invite, complete missions. Activity = Reward.</p>
 
-    <h2 class="section-title">💭 Prologue: While everyone looks at the hype, money is flowing elsewhere</h2>
-
-    <p>2025 has become the year of "crypto madness." On X/Twitter — thousands of posts about "airdrop monsters." In Telegram — hordes of "gurus" shouting, "Join where there are a million participants."</p>
-
-    <h3 class="highlight">But what happens next?</h3>
-    <ul>
-        <li>Monad: 100 million wallets, but rewards are only 1%</li>
-        <li>zkSync: a year of farming, hundreds of hours, and the result? Pennies.</li>
-    </ul>
-
-    <p><strong>Everyone is running to the loud projects, but in crypto, money loves silence. And that’s exactly where the real gem lies: MGBX Echo Points.</strong></p>
-
-    <h2 class="section-title">ℹ️ What are Echo Points?</h2>
-    <p>Echo Points (xMGBX) is an internal point system launched by the MGBX platform on October 3, 2025.</p>
-    <p>It's not designed for hype, but for real rewards for those who act. Every action counts: registration, trading, invitations, tasks — all earn points.</p>
-
-    <p>Here, there are no bots, no randomness, and no crowd. Just a fair formula: <strong>activity = reward</strong>.</p>
-
-    <h3 class="section-title">🔥 How it works: 4 steps to your "quiet capital"</h3>
-
-    <div class="table-container">
-        <table>
-            <tr>
-                <th>Step</th>
-                <th>Description</th>
-                <th>Points Earned</th>
-            </tr>
-            <tr>
-                <td>1️⃣ Registration & Verification</td>
-                <td>Register on MGBX, complete KYC.</td>
-                <td>3 Points (1 for registration, 2 for KYC)</td>
-            </tr>
-            <tr>
-                <td>2️⃣ Trading</td>
-                <td>Earn 1 point for every 1000 USDT traded (spot or futures).</td>
-                <td>1 Point per 1000 USDT</td>
-            </tr>
-            <tr>
-                <td>3️⃣ Invite Friends</td>
-                <td>Earn points for every invited user, and their first deposit.</td>
-                <td>Up to 8 Points</td>
-            </tr>
-            <tr>
-                <td>4️⃣ Web3 Missions</td>
-                <td>Connect wallet or Discord, complete tasks, get additional points.</td>
-                <td>Varies</td>
-            </tr>
-        </table>
+    <div class="section-light">
+      <h2>How It Works — 4 Simple Steps</h2>
+      <div class="steps">
+        <div class="card">
+          <h3>1️⃣ Register & Verify</h3>
+          <p>Sign up → +1 pt<br>KYC → +2 pts<br><b>Total = 3 points</b> just for starting. No quests, no noise.</p>
+        </div>
+        <div class="card">
+          <h3>2️⃣ Trade & Earn</h3>
+          <p>Every 1000 USDT turnover (spot/futures) = 1 pt.<br><i>Simple math: more movement = more reward.</i></p>
+        </div>
+        <div class="card">
+          <h3>3️⃣ Invite Friends</h3>
+          <p>+1 pt registers · +2 pts KYC · +5 pts first deposit ≥ 100 USDT.<br><b>Up to 8 points per referral!</b></p>
+        </div>
+        <div class="card">
+          <h3>4️⃣ Web3 Missions</h3>
+          <p>Connect wallet or Discord → complete Zealy tasks → earn bonus points + private drops.</p>
+        </div>
+      </div>
     </div>
 
-    <h2 class="section-title">💥 Why MGBX is the hidden gem of 2025</h2>
-    <p class="success">Unlike typical airdrops full of bots, MGBX Echo Points rewards real users with fixed terms and a transparent system.</p>
+    <div class="section-light">
+      <h2>Why MGBX Is the Hidden Diamond of 2025</h2>
+      <table>
+        <tr><th>Feature</th><th>MGBX Echo Points</th></tr>
+        <tr><td>Participants</td><td>Real users, not bots</td></tr>
+        <tr><td>Transparency</td><td>Rules fixed & clear</td></tr>
+        <tr><td>Distribution</td><td>Rewards = by merit</td></tr>
+        <tr><td>Reward System</td><td>Mathematical fair formula</td></tr>
+        <tr><td>Fairness</td><td>For people, not whales</td></tr>
+      </table>
 
-    <p><strong>Real participants</strong> - not bots.</p>
-    <p><strong>Transparency</strong> - all rules laid out in advance.</p>
-    <p><strong>Fair distribution</strong> - everyone gets what they deserve.</p>
+      <div class="quote">“While the crowd chases noise, the smart quietly farm xMGBX.”</div>
+    </div>
 
-    <h2 class="section-title">💬 What experts and the community say</h2>
-    <blockquote>💬 CoinCodeCap: "Echo Points is a fair, gamified system. One of the most transparent mechanisms of 2025."</blockquote>
-    <blockquote>💬 MGBX Ambassador: "While other projects turn into bot farms, MGBX remains a platform where rewards go to real participants."</blockquote>
+    <div class="section-light">
+      <h2>🔥 Real Prizes & Campaigns</h2>
+      <ul>
+        <li><b>TOKEN2049:</b> $188,888 USDT – Trader Competition</li>
+        <li><b>Hold & Earn:</b> $8,500 USDT for holders</li>
+        <li><b>Newbie Growth:</b> up to $6,670 USDT for new users</li>
+        <li><b>Weekly Tournaments:</b> up to $8,000 USDT</li>
+      </ul>
+      <p>These campaigns activate automatically once you farm xMGBX. Real contests, real money — not banner bonuses.</p>
+    </div>
 
-    <h3 class="section-title">💰 Real Prizes and Campaigns</h3>
-    <ul>
-        <li>**TOKEN2049** - $188,888 USDT (traders competition)</li>
-        <li>**Hold & Earn** - $8,500 USDT (for holders)</li>
-        <li>**Newbie Growth** - Up to $6,670 USDT (for new users)</li>
-        <li>**Weekly Tournaments** - Up to $8,000 USDT</li>
-    </ul>
+    <div class="section-light">
+      <h2>💠 Web3 Integration</h2>
+      <p>Echo Points connect with Zealy.io & partners.<br>
+      💎 Points → Tokens → Money → Freedom.<br>Everything transparent & verified on-chain.</p>
+    </div>
 
-    <a href="https://www.mgbx.com/register/TszNGCic" class="cta-button">Register Now</a>
+    <div class="section-light">
+      <h2>⚡ Why You Should Act Now</h2>
+      <p>Arbitrum, zkSync, Manta — millions farmed, crumbs left.<br>
+      <b>MGBX is still quiet.</b> Few participants → bigger rewards.<br>
+      “Who comes first — takes the lion’s share.”</p>
+      <div class="center" style="text-align:center;">
+        <a href="https://www.mgbx.com/register/TszNGCic" target="_blank" class="btn-primary">🚀 Join Early Now</a>
+      </div>
+    </div>
 
-    <h2 class="section-title">🌐 Web3 Integration</h2>
-    <p>Echo Points connects with Zealy.io and partners. This means your points are a key to future airdrops and MGBX ecosystem tokens.</p>
+    <div class="cta">
+      <h2>Don’t Wait Until the Train Leaves</h2>
+      <p>MGBX Echo Points is not hype — it’s a chance.<br>
+      Transparent. Fair. Generous. Rewards for action — not noise.</p>
+      <a href="https://www.mgbx.com/register/TszNGCic" target="_blank">Get Started Now</a>
+    </div>
+  </section>
 
-    <p><strong>Points turn into tokens.</strong></p>
-    <p><strong>Tokens turn into money.</strong></p>
-    <p><strong>Everything is transparent and accessible.</strong></p>
-
-    <a href="https://www.mgbx.com/register/TszNGCic" class="cta-button">Join MGBX and Start Earning</a>
-
-</div>
+  <footer>
+    <p>© 2025 MGBX | Not financial advice | DYOR | <a href="https://www.mgbx.com" target="_blank" style="color:#ff0099;">mgbx.com</a></p>
+  </footer>
 
 </body>
 </html>
